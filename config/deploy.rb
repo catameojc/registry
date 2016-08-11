@@ -17,9 +17,6 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails unicorn}
 set :bundle_jobs, 4
 set :bundle_env_variables, { nokogiri_use_system_libraries: 1 }
 
-#set :sidekiq_queue, 'sync_registry_changes'
-#set :sidekiq_concurrency, 10
-
 after 'deploy:publishing', 'deploy:restart'
 
 namespace :deploy do
