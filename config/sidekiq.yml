@@ -6,6 +6,7 @@ test:
 
 production:
   url: redis://localhost:6379/12
-  concurrency: 15
-  queues:
+  
+:concurrency: 15
+:queues:
     - [sync_registry_changes]
